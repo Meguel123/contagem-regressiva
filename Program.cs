@@ -9,7 +9,7 @@ public class Program
 Console.WriteLine("escreva -vamos OU simbora- qunado for para continuar");
         X = Console.ReadLine();
 
-if (X.ToUpper() == "VAMOS"){
+if (X.Equals("VAMOS", StringComparison.OrdinalIgnoreCase) || X.Equals("simbora", StringComparison.OrdinalIgnoreCase)){
 Console.WriteLine("preparar");
 Console.ReadLine();
 
